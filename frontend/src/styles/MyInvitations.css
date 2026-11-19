@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+
+.invitations-page {
+    min-height: 100vh;
+    background: #F7F1E8;
+    color: #242033;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Header */
+
+.invitations-header {
+    height: 76px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #242033;
+}
+
+.invitations-logo {
+    color: #F7F1E8;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.invitations-logo span {
+    color: #C8795B;
+}
+
+.invitations-back {
+    color: #F7F1E8;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s;
+}
+
+.invitations-back:hover {
+    color: #D9B982;
+}
+
+/* Main Container */
+
+.invitations-container {
+    width: 86%;
+    max-width: 1000px;
+    margin: 55px auto;
+}
+
+.invitations-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.section-tag {
+    color: #C8795B;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.invitations-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.invitations-heading p {
+    color: #81777A;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Refresh Button */
+
+.refresh-invitations-btn {
+    padding: 11px 20px;
+    border: 1px solid #D9B982;
+    border-radius: 7px;
+    background: transparent;
+    color: #242033;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.refresh-invitations-btn:hover {
+    background: #D9B982;
+    transform: translateY(-2px);
+}
+
+/* Invitation Message */
+
+.invitation-message {
+    padding: 14px 18px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.invitation-message.success {
+    background: #EDF4E9;
+    color: #496B43;
+    border: 1px solid #C9DCC5;
+}
+
+.invitation-message.error {
+    background: #FCECE8;
+    color: #A34338;
+    border: 1px solid #EBC8C1;
+}
+
+/* Invitation Cards */
+
+.invitation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.invitation-card {
+    padding: 27px;
+    border: 1px solid #EAE1D5;
+    border-radius: 12px;
+    background: #FFFCF7;
+    box-shadow: 0 5px 18px rgba(36, 32, 51, 0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.invitation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(36, 32, 51, 0.08);
+}
+
+.invitation-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEE6DB;
+}
+
+.invitation-label {
+    color: #C8795B;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.invitation-card-top h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin: 8px 0 0;
+    color: #242033;
+}
+
+.pending-badge {
+    padding: 7px 13px;
+    border-radius: 20px;
+    background: #F8EEDB;
+    color: #98713A;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Event Information */
+
+.invitation-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 25px;
+    padding: 22px 0;
+}
+
+.invitation-info p {
+    margin: 0;
+    color: #756C70;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.invitation-info strong {
+    color: #242033;
+    font-weight: 700;
+}
+
+/* Action Buttons */
+
+.invitation-actions {
+    display: flex;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid #EEE6DB;
+}
+
+.accept-invitation-btn,
+.reject-invitation-btn {
+    padding: 12px 21px;
+    border: none;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.accept-invitation-btn {
+    background: #242033;
+    color: #FFFFFF;
+}
+
+.accept-invitation-btn:hover {
+    background: #C8795B;
+    transform: translateY(-2px);
+}
+
+.reject-invitation-btn {
+    background: #F2E9E0;
+    color: #9B5146;
+}
+
+.reject-invitation-btn:hover {
+    background: #F3DCD5;
+    transform: translateY(-2px);
+}
+
+.accept-invitation-btn:disabled,
+.reject-invitation-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Empty State */
+
+.no-invitations {
+    text-align: center;
+    padding: 65px 20px;
+    border: 1px dashed #D9CDBD;
+    border-radius: 12px;
+    background: #FFFCF7;
+}
+
+.no-invitations-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #F1E8DC;
+    color: #C8795B;
+    font-size: 27px;
+}
+
+.no-invitations h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.no-invitations p {
+    color: #81777A;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.no-invitations a {
+    display: inline-block;
+    padding: 11px 20px;
+    background: #242033;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.no-invitations a:hover {
+    background: #C8795B;
+}
+
+/* Loading */
+
+.invitations-loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F1E8;
+    color: #242033;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .invitations-header {
+        padding: 0 5%;
+    }
+
+    .invitations-container {
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    .invitations-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .invitations-heading h1 {
+        font-size: 31px;
+    }
+
+    .invitation-card {
+        padding: 20px;
+    }
+
+    .invitation-info {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .invitation-card-top h2 {
+        font-size: 21px;
+    }
+
+    .invitation-actions {
+        flex-direction: column;
+    }
+
+    .accept-invitation-btn,
+    .reject-invitation-btn {
+        width: 100%;
+    }
+}

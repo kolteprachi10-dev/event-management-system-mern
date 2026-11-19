@@ -1,0 +1,482 @@
+
+.vendor-page {
+    min-height: 100vh;
+    padding: 40px 7%;
+    background: #F7F1E8;
+    color: #242033;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.vendor-header {
+    margin-bottom: 30px;
+}
+
+.vendor-back {
+    display: inline-block;
+    color: #C8795B;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.vendor-label {
+    display: block;
+    color: #C8795B;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.vendor-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.vendor-header p {
+    color: #777;
+    margin: 0;
+}
+
+.vendor-loading {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #F7F1E8;
+    color: #242033;
+    font-size: 18px;
+}
+
+.vendor-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 18px;
+    border-radius: 9px;
+    margin-bottom: 22px;
+}
+
+.vendor-message.success {
+    background: #E6EDE3;
+    color: #3C6248;
+}
+
+.vendor-message.error {
+    background: #FCE8E4;
+    color: #A33D2D;
+}
+
+.vendor-message button {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.vendor-summary {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 30px 0 18px;
+}
+
+.vendor-summary-card {
+    background: white;
+    padding: 22px;
+    border: 1px solid #eee9e1;
+    border-radius: 13px;
+    box-shadow: 0 5px 20px rgba(36, 32, 51, .05);
+}
+
+.vendor-summary-card span,
+.vendor-finance span {
+    color: #888;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.vendor-summary-card h2 {
+    font-size: 27px;
+    margin: 12px 0 0;
+}
+
+.vendor-finance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.vendor-finance > div {
+    background: #242033;
+    color: white;
+    padding: 22px;
+    border-radius: 13px;
+}
+
+.vendor-finance span {
+    color: #D9B982;
+}
+
+.vendor-finance h2 {
+    font-size: 25px;
+    margin: 12px 0 0;
+}
+
+.vendor-section {
+    background: white;
+    padding: 27px;
+    border: 1px solid #eee9e1;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(36, 32, 51, .04);
+}
+
+.vendor-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.vendor-section-heading h2,
+.vendor-form-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin: 8px 0 0;
+}
+
+.vendor-section-heading > span {
+    background: #F7F1E8;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.vendor-filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.vendor-filters input,
+.vendor-filters select {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 15px;
+    border: 1px solid #e4ded5;
+    border-radius: 8px;
+    background: #FFFDFA;
+    color: #242033;
+    font: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.vendor-filters input:focus,
+.vendor-filters select:focus,
+.vendor-form input:focus,
+.vendor-form select:focus {
+    border-color: #C8795B;
+}
+
+.vendor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.vendor-card {
+    border: 1px solid #eee9e1;
+    background: #FFFDFA;
+    border-radius: 12px;
+    padding: 21px;
+    min-width: 0;
+}
+
+.vendor-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.vendor-category {
+    background: #F1E8DC;
+    color: #8B6049;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.vendor-booking {
+    background: #F8EFCF;
+    color: #8B6A20;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.vendor-booking.booked {
+    background: #E6EDE3;
+    color: #52664D;
+}
+
+.vendor-booking.cancelled {
+    background: #FCE8E4;
+    color: #A33D2D;
+}
+
+.vendor-booking.contacted {
+    background: #E8EAF4;
+    color: #4B5684;
+}
+
+.vendor-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    margin: 0 0 15px;
+}
+
+.vendor-card > p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 7px 0;
+    overflow-wrap: anywhere;
+}
+
+.vendor-card > p strong {
+    color: #242033;
+}
+
+.vendor-payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 15px 0;
+    margin-top: 15px;
+    border-top: 1px solid #eee9e1;
+}
+
+.vendor-payment div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.vendor-payment span {
+    color: #888;
+    font-size: 11px;
+}
+
+.vendor-payment strong {
+    font-size: 16px;
+}
+
+.vendor-payment-status {
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.vendor-payment-status strong {
+    color: #52664D;
+}
+
+.vendor-card-actions {
+    display: flex;
+    gap: 9px;
+}
+
+.vendor-card-actions button,
+.vendor-form-buttons button,
+.vendor-delete-popup button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 7px;
+    background: #242033;
+    color: white;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.vendor-card-actions button:hover,
+.vendor-form-buttons button:hover,
+.vendor-delete-popup button:hover {
+    background: #C8795B;
+}
+
+.vendor-card-actions .vendor-delete {
+    background: #FCE8E4;
+    color: #A33D2D;
+}
+
+.vendor-card-actions .vendor-delete:hover {
+    background: #A33D2D;
+    color: white;
+}
+
+.vendor-empty {
+    text-align: center;
+    padding: 40px 15px;
+    background: #FFFDFA;
+    border-radius: 10px;
+}
+
+.vendor-empty h3 {
+    margin: 0 0 8px;
+}
+
+.vendor-empty p {
+    color: #888;
+    margin: 0;
+}
+
+.vendor-form-section h2 {
+    margin-bottom: 22px;
+}
+
+.vendor-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.vendor-form input,
+.vendor-form select {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    border: 1px solid #e4ded5;
+    border-radius: 8px;
+    background: #FFFDFA;
+    color: #242033;
+    font: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.vendor-form-buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+}
+
+.vendor-form-buttons button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.vendor-form-buttons .vendor-cancel,
+.vendor-delete-popup .vendor-cancel {
+    background: #777;
+}
+
+.vendor-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(20, 17, 29, .65);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.vendor-delete-popup {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    background: #F7F1E8;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.vendor-delete-popup h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 12px;
+}
+
+.vendor-delete-popup p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.vendor-delete-popup > div {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 1000px) {
+    .vendor-summary {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .vendor-page {
+        padding: 30px 5%;
+    }
+}
+
+@media (max-width: 650px) {
+    .vendor-header h1 {
+        font-size: 30px;
+    }
+
+    .vendor-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vendor-finance {
+        grid-template-columns: 1fr;
+    }
+
+    .vendor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vendor-section {
+        padding: 20px;
+    }
+
+    .vendor-filters,
+    .vendor-form {
+        grid-template-columns: 1fr;
+    }
+
+    .vendor-form-buttons {
+        grid-column: auto;
+    }
+}
+
+
+
+.vendor-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.vendor-input-group label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #242033;
+}
+
+.vendor-input-group small {
+    color: #888;
+    font-size: 11px;
+    line-height: 1.5;
+}
